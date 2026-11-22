@@ -1,0 +1,261 @@
+.reports-page {
+  min-height: calc(100% - 76px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: var(--background-color);
+}
+
+.reports-content {
+  width: 100%;
+  max-width: 1050px;
+  min-height: 430px;
+  background: var(--surface-color);
+  border: var(--border);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 55px;
+  overflow: hidden;
+}
+
+/* Illustration */
+
+.reports-illustration {
+  position: relative;
+  width: 340px;
+  height: 300px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration-main {
+  width: 150px;
+  height: 170px;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-5deg);
+  z-index: 2;
+  box-shadow: 0 15px 35px rgba(52, 76, 59, 0.15);
+}
+
+.illustration-main svg {
+  width: 85px;
+  height: 85px;
+}
+
+.illustration-card {
+  position: absolute;
+  background: var(--background-color);
+  border: var(--border);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.card-one {
+  width: 105px;
+  height: 90px;
+  top: 25px;
+  right: 15px;
+  transform: rotate(9deg);
+  padding: 17px 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 7px;
+}
+
+.card-one span {
+  width: 12px;
+  background: var(--primary-light);
+  border-radius: 4px 4px 0 0;
+}
+
+.card-one span:nth-child(1) {
+  height: 25%;
+}
+
+.card-one span:nth-child(2) {
+  height: 55%;
+}
+
+.card-one span:nth-child(3) {
+  height: 40%;
+}
+
+.card-one span:nth-child(4) {
+  height: 80%;
+  background: var(--accent-color);
+}
+
+.card-two {
+  width: 115px;
+  height: 80px;
+  bottom: 25px;
+  left: 5px;
+  transform: rotate(-8deg);
+  padding: 15px;
+}
+
+.chart-line {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chart-line span {
+  width: 9px;
+  height: 9px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  background: var(--surface-color);
+}
+
+.chart-line span:nth-child(2) {
+  margin-top: -20px;
+}
+
+.chart-line span:nth-child(3) {
+  margin-top: 15px;
+}
+
+.chart-line span:nth-child(4) {
+  margin-top: -25px;
+  background: var(--accent-color);
+}
+
+.illustration-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--accent-color);
+}
+
+.dot-one {
+  width: 12px;
+  height: 12px;
+  top: 65px;
+  left: 45px;
+}
+
+.dot-two {
+  width: 8px;
+  height: 8px;
+  bottom: 55px;
+  right: 35px;
+  background: var(--primary-light);
+}
+
+/* Text */
+
+.reports-text {
+  flex: 1;
+  max-width: 460px;
+}
+
+.reports-eyebrow {
+  color: var(--accent-color);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.reports-text h1 {
+  color: var(--text-primary);
+  font-size: 38px;
+  font-weight: 800;
+  margin: 18px 0;
+}
+
+.reports-text h1 span {
+  color: var(--accent-color);
+}
+
+.reports-text p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 2.1;
+  margin: 0;
+}
+
+.reports-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border-color);
+  margin: 30px 0 20px;
+}
+
+.reports-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.reports-indicator {
+  width: 9px;
+  height: 9px;
+  background: var(--accent-color);
+  border-radius: 50%;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .reports-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 25px;
+    gap: 20px;
+  }
+
+  .reports-illustration {
+    transform: scale(0.85);
+    margin: -15px 0;
+  }
+
+  .reports-text {
+    width: 100%;
+  }
+
+  .reports-footer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .reports-page {
+    padding: 15px;
+  }
+
+  .reports-content {
+    padding: 25px 15px;
+  }
+
+  .reports-illustration {
+    transform: scale(0.7);
+    margin: -35px 0;
+  }
+
+  .reports-text h1 {
+    font-size: 29px;
+  }
+
+  .reports-text p {
+    font-size: 13px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+}

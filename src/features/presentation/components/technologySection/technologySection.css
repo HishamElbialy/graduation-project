@@ -1,0 +1,472 @@
+.technology-section {
+  padding: 110px 7%;
+  background: var(--surface-color);
+}
+
+.technology-container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.technology-heading {
+  max-width: 700px;
+  margin-bottom: 55px;
+}
+
+.technology-heading h2 {
+  color: var(--text-primary);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 0 0 15px;
+}
+
+.technology-heading h2 span {
+  color: var(--primary-light);
+}
+
+.technology-heading p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 2;
+  margin: 0;
+}
+
+/* Architecture */
+
+.technology-architecture {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 55px;
+  align-items: center;
+  padding: 40px;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+}
+
+.architecture-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.architecture-layer {
+  width: 100%;
+  min-height: 105px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 22px;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.architecture-layer-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: var(--background-color);
+  color: var(--primary-color);
+  border-radius: 11px;
+  font-size: 17px;
+  font-weight: 800;
+  direction: ltr;
+}
+
+.backend-layer .architecture-layer-icon {
+  background: var(--primary-color);
+  color: var(--white);
+  font-size: 14px;
+}
+
+.database-layer .architecture-layer-icon {
+  background: var(--primary-dark);
+  color: var(--white);
+  font-size: 14px;
+}
+
+.architecture-layer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.architecture-layer-info > span {
+  color: var(--accent-color);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  direction: ltr;
+  text-align: right;
+}
+
+.architecture-layer-info strong {
+  color: var(--text-primary);
+  font-size: 17px;
+}
+
+.architecture-layer-info small {
+  color: var(--text-secondary);
+  font-size: 11px;
+  direction: ltr;
+  text-align: right;
+}
+
+.architecture-layer-tag {
+  color: var(--text-secondary);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  direction: ltr;
+}
+
+.architecture-connection {
+  min-height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.connection-line {
+  width: 1px;
+  height: 25px;
+  background: var(--primary-light);
+}
+
+.connection-label {
+  color: var(--text-secondary);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  direction: ltr;
+}
+
+.connection-arrow {
+  color: var(--primary-color);
+  font-size: 15px;
+  line-height: 1;
+}
+
+.architecture-description {
+  padding: 15px 0;
+}
+
+.architecture-description h3 {
+  color: var(--text-primary);
+  font-size: 27px;
+  font-weight: 800;
+  margin: 0 0 18px;
+}
+
+.architecture-description > p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 2.2;
+  margin: 0;
+}
+
+.architecture-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.architecture-benefits > div {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 2px 12px;
+  align-items: center;
+}
+
+.architecture-benefits > div > span {
+  grid-row: span 2;
+  color: var(--accent-color);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.architecture-benefits strong {
+  color: var(--text-primary);
+  font-size: 12px;
+  direction: ltr;
+  text-align: right;
+}
+
+.architecture-benefits small {
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+/* Technology details */
+
+.technology-details {
+  margin-top: 100px;
+}
+
+.technology-details-heading {
+  margin-bottom: 25px;
+}
+
+.technology-details-heading h3 {
+  color: var(--text-primary);
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.technology-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.technology-tab {
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px 20px;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+  color: var(--text-secondary);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.technology-tab > span {
+  font-size: 10px;
+  color: var(--accent-color);
+}
+
+.technology-tab:hover {
+  border-color: var(--primary-light);
+}
+
+.technology-tab.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--white);
+}
+
+.technology-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  min-height: 310px;
+  padding: 35px;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  animation: technologyInfoIn 0.3s ease;
+}
+
+@keyframes technologyInfoIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.technology-info-icon {
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 13px;
+  font-size: 20px;
+  font-weight: 800;
+  direction: ltr;
+}
+
+.technology-info-content {
+  flex: 1;
+}
+
+.technology-info-content .section-eyebrow {
+  margin-bottom: 8px;
+  font-size: 10px;
+}
+
+.technology-info-content h4 {
+  color: var(--text-primary);
+  font-size: 23px;
+  font-weight: 800;
+  margin: 0 0 12px;
+  direction: ltr;
+  text-align: right;
+}
+
+.technology-info-content > p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 2;
+  margin: 0 0 25px;
+}
+
+.technology-responsibilities-title {
+  display: block;
+  color: var(--text-primary);
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.technology-info-content ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px 25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.technology-info-content li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.technology-info-content li span {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.technology-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 25px;
+  padding: 18px 20px;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.technology-note > span {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.technology-note p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .technology-section {
+    padding: 80px 5%;
+  }
+
+  .technology-architecture {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 25px;
+  }
+
+  .architecture-description {
+    padding: 0;
+  }
+
+  .technology-details {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .technology-section {
+    padding: 65px 5%;
+  }
+
+  .technology-heading {
+    margin-bottom: 35px;
+  }
+
+  .technology-architecture {
+    padding: 15px;
+  }
+
+  .architecture-layer {
+    gap: 10px;
+    padding: 13px;
+  }
+
+  .architecture-layer-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .architecture-layer-info strong {
+    font-size: 14px;
+  }
+
+  .architecture-layer-info small {
+    font-size: 9px;
+  }
+
+  .architecture-layer-tag {
+    font-size: 8px;
+  }
+
+  .connection-label {
+    font-size: 8px;
+  }
+
+  .technology-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+  }
+
+  .technology-tab {
+    min-width: 0;
+    padding: 12px 7px;
+    gap: 6px;
+    font-size: 11px;
+  }
+
+  .technology-info-card {
+    flex-direction: column;
+    padding: 22px 18px;
+  }
+
+  .technology-info-content h4 {
+    font-size: 19px;
+  }
+
+  .technology-info-content ul {
+    grid-template-columns: 1fr;
+  }
+}

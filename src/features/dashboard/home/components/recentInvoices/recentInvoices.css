@@ -1,0 +1,106 @@
+.recent-invoices-section {
+  background: var(--surface-color);
+  border: var(--border);
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.invoices-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.view-all-invoices {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.view-all-invoices:hover {
+  color: var(--accent-color);
+}
+
+.view-all-invoices span {
+  font-size: 17px;
+}
+
+.recent-invoices-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.recent-invoices-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.recent-invoices-table th {
+  padding: 15px 12px;
+  background: var(--background-color);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.recent-invoices-table th:first-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.recent-invoices-table th:last-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.recent-invoices-table td {
+  padding: 17px 12px;
+  color: var(--text-primary);
+  font-size: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.recent-invoices-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.invoice-number {
+  color: var(--primary-color);
+  font-weight: 700;
+  direction: ltr;
+  display: inline-block;
+}
+
+.invoice-amount {
+  font-weight: 700;
+}
+
+.recent-invoices-empty {
+  padding: 35px 15px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+@media (max-width: 576px) {
+  .recent-invoices-section {
+    padding: 15px;
+  }
+
+  .invoices-header {
+    align-items: flex-start;
+  }
+
+  .recent-invoices-table th,
+  .recent-invoices-table td {
+    padding: 13px 10px;
+    font-size: 11px;
+  }
+}

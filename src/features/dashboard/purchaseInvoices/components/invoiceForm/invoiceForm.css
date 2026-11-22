@@ -1,0 +1,161 @@
+/* Cards */
+
+.invoice-card {
+  padding: 25px;
+  margin-bottom: 22px;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.section-heading p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.section-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Form Fields */
+
+.invoice-fields,
+.item-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 44px;
+  padding: 0 13px;
+  border: 1px solid var(--border-color);
+  border-radius: 7px;
+  outline: none;
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 13px;
+  transition: var(--transition);
+}
+
+.form-group input::placeholder {
+  color: var(--text-secondary);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--primary-light);
+}
+
+/* Item Form Actions */
+
+.item-form-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.add-item-btn,
+.cancel-edit-btn {
+  min-height: 42px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.add-item-btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.add-item-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.cancel-edit-btn {
+  background-color: var(--background-color);
+  color: var(--text-secondary);
+}
+
+.cancel-edit-btn:hover {
+  color: var(--text-primary);
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .invoice-fields,
+  .item-fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .invoice-card {
+    padding: 18px;
+  }
+
+  .invoice-fields,
+  .item-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+
+  .item-form-actions {
+    flex-direction: column;
+  }
+
+  .item-form-actions button {
+    width: 100%;
+  }
+}

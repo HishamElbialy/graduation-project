@@ -1,0 +1,66 @@
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Main action */
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  filter: brightness(0.9);
+  background: var(--background-color);
+  color: var(--primary-color);
+}
+
+/* Submit */
+.btn-submit {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-submit:hover {
+  background: var(--background-color);
+}
+
+/* Cancel */
+.btn-cancel {
+  background: var(--background-color);
+  color: var(--primary-color);
+}
+
+.btn-cancel:hover {
+  background: var(--primary-light);
+  color: var(--white);
+}
+
+/* Delete */
+.btn-danger {
+  background: var(--danger-color);
+  color: var(--white);
+}
+
+/* Secondary action */
+.btn-secondary {
+  background: var(--surface-color);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+/* Disabled */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

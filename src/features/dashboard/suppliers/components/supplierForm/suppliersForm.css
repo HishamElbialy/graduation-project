@@ -1,0 +1,149 @@
+.supplier-card {
+  padding: 25px;
+  margin-bottom: 22px;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.supplier-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.supplier-section-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.supplier-section-heading h2 {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.supplier-section-heading p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+/* Form Fields */
+
+.supplier-form-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.supplier-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.supplier-form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.supplier-form-group input {
+  width: 100%;
+  height: 44px;
+  padding: 0 13px;
+  border: 1px solid var(--border-color);
+  border-radius: 7px;
+  outline: none;
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 13px;
+  transition: var(--transition);
+}
+
+.supplier-form-group input::placeholder {
+  color: var(--text-secondary);
+}
+
+.supplier-form-group input:focus {
+  border-color: var(--primary-light);
+}
+
+/* Form Actions */
+
+.supplier-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.supplier-submit-btn,
+.supplier-cancel-btn {
+  min-height: 42px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.supplier-submit-btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.supplier-submit-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.supplier-cancel-btn {
+  background-color: var(--background-color);
+  color: var(--text-secondary);
+}
+
+.supplier-cancel-btn:hover {
+  color: var(--text-primary);
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .supplier-form-fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .supplier-card {
+    padding: 18px;
+  }
+
+  .supplier-form-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .supplier-form-actions {
+    flex-direction: column;
+  }
+
+  .supplier-form-actions button {
+    width: 100%;
+  }
+}

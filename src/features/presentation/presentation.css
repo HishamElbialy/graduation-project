@@ -1,0 +1,17 @@
+.presentation-page {
+  min-height: 100vh;
+  background: var(--background-color);
+  overflow: hidden;
+}
+
+.presentation-page * {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.presentation-page a {
+  -webkit-tap-highlight-color: transparent;
+}
