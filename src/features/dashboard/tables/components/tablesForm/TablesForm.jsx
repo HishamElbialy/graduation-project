@@ -22,19 +22,6 @@ const TableForm = ({
 
       <form onSubmit={onSubmit}>
         <div className="table-form-fields">
-          <div className="table-form-group">
-            <label htmlFor="table-name">اسم الطاولة</label>
-
-            <input
-              id="table-name"
-              type="text"
-              name="name"
-              placeholder="مثال: طاولة خارجية"
-              value={formData.name}
-              onChange={onChange}
-              required
-            />
-          </div>
 
           <div className="table-form-group">
             <label htmlFor="table-number">رقم الطاولة</label>

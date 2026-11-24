@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-
 import "./sidebar.css";
 import menuItems from "./components/menuItems";
 import SidebarIcon from "./components/SidebarIcon";
@@ -7,14 +6,13 @@ import SidebarIcon from "./components/SidebarIcon";
 const Sidebar = () => {
   return (
     <aside className="sidebar" dir="rtl">
-      {/* Brand */}
       <div className="sidebar-brand">
         <div className="brand-logo">
-          <span>R</span>
+          <span>C</span>
         </div>
 
         <div className="brand-info">
-          <h2>Restaurant</h2>
+          <h2>CAV</h2>
           <span>Management System</span>
         </div>
       </div>

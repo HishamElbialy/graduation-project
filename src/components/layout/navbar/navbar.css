@@ -6,10 +6,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-
-  background-color: #ffffff;
-  border-bottom: 1px solid #edf0ec;
-
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* Page Info */
@@ -21,19 +19,19 @@
 }
 
 .navbar-page-label {
-  color: #a0a79f;
+  color: var(--text-secondary);
   font-size: 13px;
   font-weight: 400;
 }
 
 .navbar-divider {
-  color: #d5dbd4;
+  color: var(--border-color);
   font-size: 16px;
 }
 
 .navbar-page-info h1 {
   margin: 0;
-  color: #344c3b;
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: 700;
 }
@@ -53,22 +51,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 42px;
   height: 42px;
-
-  background-color: #f7f8f5;
-  border: 1px solid #edf0ec;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
   border-radius: 11px;
-
-  color: #607965;
+  color: var(--primary-light);
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: var(--transition);
 }
 
 .navbar-icon-btn:hover {
-  background-color: #f0f4ef;
-  border-color: #dfe7de;
+  background-color: var(--background-color);
+  border-color: var(--primary-light);
 }
 
 .navbar-icon-btn svg {
@@ -80,12 +75,10 @@
   position: absolute;
   top: 9px;
   right: 9px;
-
   width: 7px;
   height: 7px;
-
-  background-color: #bd875d;
-  border: 1.5px solid #f7f8f5;
+  background-color: var(--accent-color);
+  border: 1.5px solid var(--background-color);
   border-radius: 50%;
 }
 
@@ -104,13 +97,13 @@
 }
 
 .navbar-user-name {
-  color: #344c3b;
+  color: var(--primary-color);
   font-size: 13px;
   font-weight: 700;
 }
 
 .navbar-user-role {
-  color: #98a098;
+  color: var(--text-secondary);
   font-size: 11px;
 }
 
@@ -120,12 +113,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-color: #edf2ec;
-  border: 1px solid #e3eae1;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
-
-  color: #607965;
+  color: var(--primary-light);
 }
 
 .navbar-avatar svg {

@@ -51,7 +51,7 @@ export default function Login({ onLogin }) {
           </div>
 
           <div>
-            <h2>كافيه البت براءه</h2>
+            <h2>CAV</h2>
             <span>نظام إدارة المطاعم والكافيهات</span>
           </div>
         </header>
@@ -174,11 +174,6 @@ export default function Login({ onLogin }) {
             <span>بياناتك محمية وآمنة</span>
           </div>
         </div>
-
-        {/* <footer className="form-footer">
-          <span>© 2026 جميع الحقوق محفوظة</span>
-          <span>صُنع لإدارة أفضل</span>
-        </footer> */}
       </section>
     </main>
   );

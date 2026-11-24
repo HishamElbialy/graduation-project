@@ -3,11 +3,9 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-
   background-color: var(--white);
   border-left: var(--border);
-
-  color: var(--olive);
+  color: var(--text-primary);
 }
 
 /* Brand */
@@ -18,7 +16,6 @@
   align-items: center;
   gap: 12px;
   padding: 0 24px;
-
   border-bottom: var(--border);
 }
 
@@ -28,10 +25,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-color: #344c3b;
+  background-color: var(--primary-color);
   border-radius: 12px;
-
   color: var(--white);
   font-size: 23px;
   font-weight: 700;
@@ -47,12 +42,11 @@
   margin: 0;
   font-size: 16px;
   font-weight: 700;
-  /* color: var(--olive); */
 }
 
 .brand-info span {
   font-size: 10px;
-  color: #98a098;
+  color: var(--text-secondary);
   direction: ltr;
   text-align: right;
 }
@@ -69,8 +63,7 @@
   display: block;
   padding: 0 12px;
   margin-bottom: 15px;
-
-  color: #a0a79f;
+  color: var(--text-secondary);
   font-size: 11px;
   font-weight: 600;
 }
@@ -86,27 +79,24 @@
   display: flex;
   align-items: center;
   gap: 12px;
-
   min-height: 46px;
   padding: 0 13px;
-
-  color: #7b867d;
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;
-
   border-radius: 9px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: var(--transition);
 }
 
 .sidebar-link:hover {
-  background-color: #f7f9f6;
-  color: #344c3b;
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
 
 .sidebar-link.active {
-  background-color: #edf3ec;
-  color: #344c3b;
+  background-color: var(--background-color);
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -114,11 +104,9 @@
   content: "";
   position: absolute;
   right: 0;
-
   width: 3px;
   height: 23px;
-
-  background-color: #607965;
+  background-color: var(--primary-light);
   border-radius: 5px 0 0 5px;
 }
 
@@ -138,38 +126,31 @@
 .sidebar-logout {
   width: 100%;
   min-height: 44px;
-
   display: flex;
   align-items: center;
   gap: 12px;
-
   padding: 0 13px;
   border: none;
   border-radius: 9px;
-
   background-color: transparent;
-  color: #b66c5f;
-
+  color: var(--accent-color);
   font-family: inherit;
   font-size: 13px;
   cursor: pointer;
-
-  transition: 0.2s ease;
+  transition: var(--transition);
 }
 
 .sidebar-logout:hover {
-  background-color: #fff3f1;
+  background-color: var(--background-color);
 }
 
 .sidebar-version {
   display: flex;
   align-items: center;
   gap: 8px;
-
   margin-top: 14px;
   padding: 12px 5px 2px;
-
-  color: #a0a79f;
+  color: var(--text-secondary);
   font-size: 10px;
 }
 
@@ -181,7 +162,7 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: #829782;
+  background-color: var(--primary-light);
 }
 
 /* Responsive */
